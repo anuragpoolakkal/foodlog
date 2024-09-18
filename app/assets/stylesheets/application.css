@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+.navbar-item:hover {
+	background-color: #6676f1;
+	border-radius: 10px;
+}
