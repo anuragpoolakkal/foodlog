@@ -33,13 +33,13 @@
 
       <% entries.each do |entry| %>
         <%= link_to entry_path(entry) do %>
-          <div class="card is-padding-top-2 ">
+          <div class="card">
             <div class="card-content">
               <strong><%= entry.meal_type %></strong><br/>
               <%= entry.calories %> calories,
               <%= entry.proteins %>g protein,
               <%= entry.carbohydrates %>g carbs,
-              <%= entry.fats %>g fat
+              <%= entry.fats %>g fatrag
             </div>
           </div>
         <% end %>

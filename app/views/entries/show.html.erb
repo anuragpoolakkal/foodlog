@@ -2,13 +2,12 @@
   <%= @entry.meal_type %> &ndash; <%= DateTime.now.to_fs(:nice_date) %>
 <% end %>
 
-<p style="color: green"><%= notice %></p>
-
 <div class="columns mt-6 is-centered">
   <div class="column is-one-third">
     <nav class="panel is-link">
       <p class="panel-heading">
-        <%= @entry.meal_type %>
+        <%= @entry.meal_type %>:
+        <%= @entry.category.title %>
       </p>
 
       <div class="panel-block">

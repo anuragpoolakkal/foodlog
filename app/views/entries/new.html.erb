@@ -1,11 +1,6 @@
-<% content_for :title, "New entry" %>
-
-<br>
-
-<%= render "form", entry: @entry %>
-
-<br>
-
-<div>
-  <%= link_to "Back to entries", entries_path %>
+<div class="columns is-centered mt-6">
+  <div class="column is-one-third">
+    <div class="is-size-2 has-text-weight-bold mb-3">New entry</div>
+    <%= render 'form', entry: @entry %>
+  </div>
 </div>
